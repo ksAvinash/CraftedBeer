@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DescriptionFragment">
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/whiteColor"
+            app:cardElevation="2dp">
+
+            <ImageView
+                android:id="@+id/desc_beer_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name : "
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp" />
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/beer_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/name"
+                        android:paddingStart="4dp"
+                        android:textColor="#1e88e5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Cost : "
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp" />
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/beer_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@+id/cost"
+                        android:paddingStart="4dp"
+                        android:textColor="#1e88e5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/whiteColor"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp">
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Style : "
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp" />
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/beer_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/style"
+                        android:paddingStart="4dp"
+                        android:textColor="#1e88e5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp">
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/alcohol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Alcohol Content  : "
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp" />
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/beer_abv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/alcohol"
+                        android:paddingStart="4dp"
+                        android:textColor="#1e88e5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp">
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/ibu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="IBU : "
+                        android:textColor="@color/textColor"
+                        android:textSize="16sp" />
+
+                    <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                        android:id="@+id/beer_ibu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ibu"
+                        android:paddingStart="4dp"
+                        android:textColor="#1e88e5"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardBackgroundColor="@color/whiteColor"
+            app:cardElevation="2dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:text="Description"
+                    android:textColor="@color/textColor"
+                    android:textSize="16sp" />
+
+
+                <it.justdevelop.craftedbeer.fonts.sans_pro
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/description"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pellentesque urna, sed lacinia purus. Maecenas venenatis quam sit amet ullamcorper molestie. Donec pretium ex vitae placerat blandit. Aenean egestas eros tempor gravida convallis. Phasellus scelerisque urna nulla, eget porta nunc convallis eget. Fusce hendrerit felis a sollicitudin pharetra. Morbi facilisis blandit odio, vitae aliquet nibh semper auctor. Aliquam lobortis ante nec pellentesque mattis. Nunc ut pulvinar diam. Vestibulum non faucibus diam, non faucibus mi. Vestibulum accumsan odio ut tortor viverra, et tristique nulla efficitur. Suspendisse maximus nibh mi, vitae scelerisque purus rhoncus eget. Vestibulum non mattis felis. Nullam sit amet lacus orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla laoreet pharetra nisl ut lobortis."
+                    android:textColor="@color/secondaryText" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:layout_marginTop="30dp"
+                android:id="@+id/add_to_cart"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_orange_button"
+                android:textColor="@color/whiteColor"
+                android:layout_marginBottom="30dp"
+                android:text="Add TO CART" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+</RelativeLayout>

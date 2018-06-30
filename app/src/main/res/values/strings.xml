@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Crafted Beer</string>
+
+    <string name="title_account">Account</string>
+    <string name="title_beers">Beers</string>
+    <string name="title_cart">Cart</string>
+
+
+    <string name="web_api">http://starlord.hackerearth.com/beercraft</string>
+    <string name="bucket">https://s3.ap-south-1.amazonaws.com/test-hackerrank/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

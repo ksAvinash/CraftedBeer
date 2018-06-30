@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/whiteColor"
+        app:cardElevation="2dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="start|center"
+            android:id="@+id/beer_image"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            >
+            <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beer_name"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                />
+            <it.justdevelop.craftedbeer.fonts.sans_pro
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beer_style"
+                android:textSize="12sp"
+                android:textColor="@color/secondaryText"
+                android:layout_marginTop="12dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_gravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            >
+            <com.like.LikeButton
+                app:icon_size="28dp"
+                android:id="@+id/add_to_cart_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:anim_scale_factor="1"
+                app:like_drawable="@drawable/added_to_cart"
+                app:unlike_drawable="@drawable/add_to_cart"
+                />
+
+            <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/beer_ounces"
+                android:layout_below="@+id/add_to_cart_icon"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="12.0 Oz"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

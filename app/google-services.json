@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "742002286518",
+    "firebase_url": "https://craftedbeer-fb179.firebaseio.com",
+    "project_id": "craftedbeer-fb179",
+    "storage_bucket": "craftedbeer-fb179.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742002286518:android:e239ea2ea1c35004",
+        "android_client_info": {
+          "package_name": "it.justdevelop.craftedbeer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742002286518-0ek5p5ghfau6hnomltegeko1s02ldam2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.justdevelop.craftedbeer",
+            "certificate_hash": "14aa962163f64a4def80d5940b9615d68c53c342"
+          }
+        },
+        {
+          "client_id": "742002286518-l3p1cc8sb8apg2dv2i6okjgr48pv2197.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEaY3CIcl27tEm-eNUFpG62B-5AWl5yic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742002286518-l3p1cc8sb8apg2dv2i6okjgr48pv2197.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

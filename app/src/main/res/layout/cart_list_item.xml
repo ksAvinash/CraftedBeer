@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/whiteColor"
+        app:cardElevation="2dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="start|center"
+            android:id="@+id/cart_beer_image"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            >
+            <it.justdevelop.craftedbeer.fonts.sans_pro_bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/cart_product_name"
+                android:text="Product name"
+                android:textColor="#1e88e5"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <it.justdevelop.craftedbeer.fonts.sans_pro
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:textSize="16sp"
+                    android:id="@+id/quantity"
+                    android:text="Quantity : "
+                    android:textColor="@color/textColor"
+                    android:layout_centerVertical="true"
+                    />
+
+                <Button
+                    android:layout_toRightOf="@+id/quantity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/cart_product_quantity"
+                    android:background="@drawable/circle"
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/whiteColor"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:id="@+id/cart_status"
+            android:layout_gravity="bottom|end"
+            android:padding="0dp"
+            android:textSize="12sp"
+            android:background="@drawable/rounded_orange_button"
+            android:textColor="@color/whiteColor"
+            android:layout_margin="4dp"
+            />
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
